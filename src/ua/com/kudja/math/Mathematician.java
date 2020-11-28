@@ -28,7 +28,7 @@ public class Mathematician {
 
     }
 
-    // Метод фильтрации годов
+    // Метод фильтрации лет
     ArrayList<Integer> filterYears(ArrayList<Integer> years) {
         for (int i = 0; i < years.size(); ++i) {
             if (years.get(i) % 4 != 0 || years.get(i) % 100 == 0 && years.get(i) % 400 != 0) {
