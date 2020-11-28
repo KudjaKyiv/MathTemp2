@@ -11,7 +11,6 @@ public class Mathematician {
             second[i] = first[i] * first[i];
         }
         return second;
-
     }
 
     // Метод исключения положительных цифр
@@ -22,10 +21,7 @@ public class Mathematician {
                 removing.remove(i);
             }
         }
-
-
         return removing;
-
     }
 
     // Метод фильтрации лет
@@ -35,9 +31,7 @@ public class Mathematician {
                 years.remove(i);
             }
         }
-
         return years;
     }
-
 }
 
