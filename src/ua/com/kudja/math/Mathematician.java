@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Mathematician {
 
     // Метод возведения в степень
-    public int[] squareNums(int[] first) {
+    int[] squareNums(int[] first) {
         int[] second = new int[first.length];
         for (int i = 0; i < first.length; i++) {
             second[i] = first[i] * first[i];
@@ -15,7 +15,7 @@ public class Mathematician {
     }
 
     // Метод исключения положительных цифр
-    public ArrayList<Integer> removePositive(ArrayList<Integer> removing) {
+    ArrayList<Integer> removePositive(ArrayList<Integer> removing) {
 
         for (int i = 0; i < removing.size(); i++) {
             if (removing.get(i) >= 0) {
@@ -29,7 +29,7 @@ public class Mathematician {
     }
 
     // Метод фильтрации годов
-    public ArrayList<Integer> filterYears(ArrayList<Integer> years) {
+    ArrayList<Integer> filterYears(ArrayList<Integer> years) {
         for (int i = 0; i < years.size(); ++i) {
             if (years.get(i) % 4 != 0 || years.get(i) % 100 == 0 && years.get(i) % 400 != 0) {
                 years.remove(i);
